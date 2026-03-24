@@ -4,6 +4,8 @@ Code and data for **"BRAGD: Constrained Multi-Label POS Tagging for Faroese"**, 
 
 **Authors:** Annika Simonsen, Barbara Scalvini, Uni Johannesen, Iben Nyholm Debess, Hafsteinn Einarsson, Vésteinn Snæbjarnarson
 
+The exact code used for the experiments reported in the paper is available in release [`v1.0`](https://github.com/Maltoknidepilin/BRAGD/releases/tag/v1.0). The `main` branch may contain updates and improvements made after publication.
+
 ## Overview
 
 We propose a multi-label approach to POS tagging for Faroese, where each token's tag is decomposed into a 73-dimensional binary feature vector covering word class, subcategory, gender, number, case, and other morphological attributes. A constrained loss function restricts gradient updates to only the feature groups relevant to each token's word class, preventing spurious learning signals from irrelevant categories (e.g., tense for nouns).
